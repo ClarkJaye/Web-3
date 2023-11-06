@@ -1,0 +1,216 @@
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  outline: none;
+}
+
+.modal header {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 12% auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 1rem;;
+}
+
+.modal-content h4 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: -5px;
+  right: 11px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal form {
+  margin-top: 20px;
+}
+
+.modal form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.modal form input[type="text"],
+.modal form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-size: 16px;
+}
+
+.modal form input[type="text"]:focus {
+  border: 1px solid #0171d3;
+}
+
+.modal form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0171d3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal form button:hover {
+  background-color: #0278e0;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+#submitBtn {
+  color: #fff;
+  background: #0171d3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#submitBtn:hover {
+  background: #013289;
+}
+
+.list-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.list-btn button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #0171d3;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.list-btn button:hover {
+  background: #127fdf;
+}
+
+/* ADD Photo */
+#file, #edit-file {
+  display: none;
+}
+
+#photo-name , #edit-photo-name{
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.img-cont , .edit-img-cont{
+  width: 90%;
+  height: 250px;
+  margin: auto;
+}
+
+#choosen-img, #edit-choosen-img {
+  /* max-height: 300px; */
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.photo-cont, .edit-photo-cont {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.photo-btn {
+  display: block;
+  position: relative;
+  background-color: #025bee;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0;
+  width: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input.input {
+  font-size: 16px;
+}
+.date,.time{
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.photo-btn:hover {
+  background-color: #0048bf;
+}
+
+/* Error Message */
+.statusMessage {
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.error {
+  color: #721c24 !important;
+  background-color: #f8d7da !important;
+  border-color: #f5c6cb !important;
+}
+
+.success {
+  color: #004085 !important;
+  background-color: #cce5ff !important;
+  border-color: #b8daff !important;
+}
+
+.d-none {
+  display: none;
+}
